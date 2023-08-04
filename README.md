@@ -10,4 +10,4 @@ Durante o desenvolvimento destes projetos, não fiz pesquisas relacionadas diret
 
 Não assisti tutoriais exceto no desafio do elevador, assisti tutorial para aprender a trabalhar com o canvas em HTML.
 
-Não utilizei ferramentas IA para gerar códigos.
+Não utilizei ferramentas IA.
