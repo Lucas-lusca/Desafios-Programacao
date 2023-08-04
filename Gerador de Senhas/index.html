@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Gerador de Senhas</h1>
+        
+        <label for="amountCharacters">Quantidade de Caracteres</label>
+        <input type="range" name="amountCharacters" id="amountCharacters" min="10" max="100" value="10" step="1">
+        <span id="amonunt">10</span>
+
+        <span>Escolha alguma opção abaixo:</span>
+
+        <label for="upperCase">Incluir Letras Maiusculas</label>
+        <input type="checkbox" name="upperCase" id="upperCase">
+
+        <label for="lowerCase">Incluir Letras Minusculas</label>
+        <input type="checkbox" name="lowerCase" id="lowerCase">
+        
+        <label for="includeNumbers">Incluir Números</label>
+        <input type="checkbox" name="includeNumbers" id="includeNumbers">
+
+        <label for="includeSymbols">Incluir Caracteres Especiais</label>
+        <input type="checkbox" name="includeSymbols" id="includeSymbols">
+
+        <label for="includeEmojis">Incluir Emojis</label>
+        <input type="checkbox" name="includeEmojis" id="includeEmojis">
+        <span>Emojis valem por 2 caracteres!</span>
+        <span>Senha com apenas emojis aceitam apenas tamanhos pares!</span>
+
+        <button class="btn" type="button" onclick="generator()">GERAR</button>
+
+        <input class="generated" type="text" name="generatedPassword" id="generatedPassword" placeholder="Senha gerada"></input>
+
+        <span>Força da senha: </span>
+        <span id="passwordStrength"></span>
+
+        <button class="btn" type="button" onclick="copyText()">COPIAR</button>
+    </div>
+</body>
+<script src="passworldGenerator.js"></script>
+</html>

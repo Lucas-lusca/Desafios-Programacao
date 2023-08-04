@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Numérico Romano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>Conversor Numérico Romano</h1>
+            
+            <!-- onKeyup aciona a função converter assim que uma tecla sobe -->
+            <input onkeyup="converter()" type="text" name="toChange" id="toChange" placeholder="Número para converter">
+            <button onclick="converter()">CONVERTER</button>
+            <input type="text" name="response" id="response" placeholder="Valor da conversão">
+            
+            <!-- <input onkeyup="inverseConverter()" type="text" name="toChange" id="toChange" placeholder="Número para converter">
+            <button onclick="inverseConverter()">CONVERTER</button>
+            <input type="text" name="response" id="response" placeholder="Valor da conversão"> -->
+    </div>
+</body>
+<script src="converter.js"></script>
+</html>

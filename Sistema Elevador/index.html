@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="canvasContent">
+        <h1>Sistema de Elevador</h1>
+        <canvas id="canvas" width="500" height="500"></canvas>
+    
+        <!-- <input type="range" name="positionY" id="positionY" min="150" max="450" value="420" step="1">
+        <span id="teste">420</span> -->
+    </div>
+
+    <div class="callElevator">
+        <h3>Chamar elevador</h3>
+        <button type="button" onclick="btn(3)">4 Andar</button>
+        <button type="button" onclick="btn(2)">3 Andar</button>
+        <button type="button" onclick="btn(1)">2 Andar</button>
+        <button type="button" onclick="btn(0)">1 Andar</button>
+        <button type="button" onclick="btn(-1)">Poço</button>
+    </div>
+
+    <div class="informations">
+        <span>Andar atual:</span>
+        <span id="currentFloor"></span>
+
+        <span>Lista de andares selecionados:</span>
+        <span id="listOfSelectedFloors"></span>
+    </div>
+
+    <div class="chooseFloor">
+        <h3>Escolha o andar</h3>
+        <span>Dentro do elevador</span>
+        <button type="button" onclick="btn(3)">4</button>
+        <button type="button" onclick="btn(2)">3</button>
+        <button type="button" onclick="btn(1)">2</button>
+        <button type="button" onclick="btn(0)">1</button>
+        <button type="button" onclick="btn(-1)">Poço</button>
+    </div>
+
+</body>
+
+<script src="elevator.js"></script>
+
+</html>

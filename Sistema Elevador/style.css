@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas{
+    border: 1px solid #ababab;
+}
+
+.callElevator{
+    display: grid;
+    margin: 25px;
+}
+
+button{
+    margin-top: 20px;
+}
+
+.canvasContent{
+    display: grid;
+    padding-left: 50px;
+}
+
+.informations{
+    display: grid;
+    text-align: center;
+}
+
+#currentFloor{
+    margin-bottom: 20px;
+}
+
+.chooseFloor{
+    display: grid;
+    margin: 25px;
+}
